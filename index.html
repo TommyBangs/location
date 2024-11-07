@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Locations Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <button class="hamburger-menu" id="menuToggle" aria-label="Toggle Menu">
+            <div class="hamburger-lines">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </button>
+        
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h1>Legal Locations Finder</h1>
+            </div>
+            <div class="search-box">
+                <input type="text" id="search" placeholder="Search locations...">
+            </div>
+            <div class="location-list" id="locationList">
+                <!-- Location items will be populated here -->
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+    <script src="script.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+</body>
+</html> 
